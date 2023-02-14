@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside of bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-9/12 mx-auto">
+    <header class="text-center"><h1 class="text-5xl mt-8">Let's get some <span class="text-cyan-300">Moooooooooony</span></h1></header>
+ <main>
+    <section>
+       <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-8">
+         <div class="p-8 bg-indigo-400 text-center rounded">
+            <h1 class="text-3xl">Deposit</h1>
+            <h2 class="text-2xl">$<span id="setdepositvalue">00</span></h2>
+         </div>
+         <div class="p-8 bg-orange-400 text-center rounded">
+            <h1 class="text-3xl">Withdrow</h1>
+            <h2 class="text-2xl">$<span id="setwithdrow">00</span></h2>
+         </div>
+         <div class="p-8 bg-lime-400 text-center rounded">
+            <h1 class="text-3xl">Total</h1>
+            <h2 class="text-2xl">$<span id="balancetotal">2000</span></h2>
+         </div>
+       </div>
+    </section>
+    <section>
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-8">
+            <div class="p-8 bg-indigo-400  rounded">
+                <h1 class="font-bold text-white text-3xl">please Deposit</h1>
+               <h1 class="text-2xl font-bold mt-3">Deposit</h1>
+               <input class="mt-3 mb-3 w-8/12 p-2 block" type="text" name="" id="setdeposit" placeholder="Set your Ammount">
+               <button id="btnsetammount" class="bg-fuchsia-700 hover:bg-violet-600 px-4 py-3 rounded font-bold text-white">Deposit</button>
+            </div>
+            <div class="p-8 bg-indigo-400  rounded">
+                <h1 class="font-bold text-white text-3xl">please Deposit</h1>
+               <h1 class="text-2xl font-bold mt-3">Withdrow</h1>
+               <input class="mt-3 mb-3 w-8/12 p-2 block" type="text" name="" id="withdrowammoubt" placeholder="Set your Ammount">
+               <button id="btn-withdrow" class="bg-fuchsia-700 hover:bg-sky-600 px-4 py-3 rounded font-bold text-white">Withdrow</button>
+            </div>
+            
+          </div>
+    </section>
+ </main>
+<script src="./js/deposit.js"></script>
+<script src="./js/withdrow.js"></script>
+</body>
+</html>
